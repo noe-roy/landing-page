@@ -1,73 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee is awesome</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <title>Sierra Brew</title>
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <h1>Coffee is awesome</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+  <header>
+    <div class="header-container flex">
+      <div class="icon logo">Sierra Brew</div>
+      <nav class="menu">
+        <ul>
+          <li class="menu-item"><a href="index.html">Home</a></li>
+          <li class="menu-item"><a href="#about">About</a></li>
+          <li class="menu-item"><a href="#testimonials">Testimonials</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="section-container flex">
+        <div class="left">
+          <h2 class="hero__title">Awaken Your Senses, One Sip at a Time</h2>
+          <p class="hero__secondary-text">At Sierra Brew, we believe that coffee is more than just a beverage—it's a moment, a ritual, and a story in
+            every cup. Our commitment to quality, sustainability, and craftsmanship is what sets us apart.</p>
+          <button class="button button--solid">Sign Up</button>
         </div>
-    </header>
+        <img class="hero-image" src="./images/coffee-beans-and-cup.jpeg"
+          alt="A steaming cup of coffee on a rustic wooden table with scattered coffee beans.">
+      </div>
+    </section>
 
-    <main>
-        <section class="hero">
-            <h2>Coffee is awesome</h2>
-            <p>At Coffee is awesome, we have the best coffee in town. Come and get your fix today!</p>
-            <button onclick="location.href='signup.html'">Sign Up</button>
-            <img src="" alt="">
-        </section>
+    <section class="about" id="about">
+      <div class="section-container">
+        <h2 class="about__title">Passion in Every Bean</h2>
+        <div class="services flex">
+          <!-- Signature Blends -->
+          <div class="card">
+            <img src="./images/signature-blends.webp"
+              alt="Signature Blends coffee branding with steaming cups, roasted beans, and labeled bags on a rustic wooden table.">
+            <p>Our carefully curated blends are designed to delight every palate. Whether you prefer bold and rich or
+              smooth and subtle, we have the perfect roast for you.</p>
+          </div>
 
-        <section class="about">
-            <h2>About us</h2>
-            <p>At Coffee is awesome, we are passionate about coffee. We source the best beans from around the world and roast them to perfection. Our baristas are highly trained and can make you the perfect cup of coffee every time.</p>
-            <div class="cards">
-                <!-- Feature 1 -->
-                <div class="card">
-                    <img src="" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, provident.</p>
-                </div>
-                <!-- Feature 2 -->
-                <div class="card">
-                    <img src="" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, provident.</p>
-                </div>
-                <!-- Feature 3 -->
-                <div class="card">
-                    <img src="" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, provident.</p>
-                </div>
-                <!-- Feature 4 -->
-                <div class="card">
-                    <img src="" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, provident.</p>
-                </div>
-            </div>
-        </section>
+          <!-- Single-Origin Selection -->
+          <div class="card">
+            <img src="./images/single-origin-selection.webp"
+              alt="Single-Origin Selection coffee display with a steaming cup, burlap sack of beans, and a map of coffee-growing regions.">
+            <p>Savor the unique flavors of our single-origin coffees, sourced responsibly from renowned coffee-growing
+              regions worldwide.</p>
+          </div>
 
-        <section class="quote">
-            <blockquote>
-                "The best coffee in town! I can't get enough of it!"
-            </blockquote>
-        </section>
+          <!-- Custom Roasting Services -->
+          <div class="card">
+            <img src="./images/custom-roasting-services.webp" alt="Barista roasting coffee beans with jars, notes, and flavor charts in a cozy setting.">
+            <p>Have a specific taste in mind? Let us create a custom roast tailored to your preferences for a truly
+              personalized coffee experience.</p>
+          </div>
 
-        <section class="call-to-action">
-            <h2>Call to action! It's time!</h2>
-            <p>Get in touch with us today to find out more about our coffee or to book a table. You can call us on 01234 567890 or email us at</p>
-        </section>
-    </main>
+          <!-- Barista Workshops -->
+          <div class="card">
+            <img src="./images/barista-workshop.webp" alt="Barista teaching coffee brewing to participants in a cozy café with brewing equipment.">
+            <p>Learn the art of coffee brewing with our expert-led workshops, perfect for enthusiasts and professionals
+              alike.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-        <p>Copyright &copy The Odin Project 2021</p>
-    </footer>
+    <section class="customer-quote" id="testimonials">
+      <div class="section-container">
+        <div class="quote-container">
+          <blockquote class="quote">
+            Sierra Brew has transformed my mornings. Their single-origin Ethiopian roast is like sunshine in a cup! The
+            quality and care they put into their coffee are unmatched.
+          </blockquote>
+          <cite>– Emma R., Coffee Lover</cite>
+        </div>
+      </div>
+    </section>
+
+    <section class="call-to-action">
+      <div class="section-container">
+        <div class="call-to-action-container">
+          <div class="left">
+            <h2>Ready to Elevate Your Coffee Game?</h2>
+            <p>Discover the taste of perfection and join our coffee-loving community today.</p>
+          </div>
+          <div class="right">
+            <button class="button button--duotone">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <p>Copyright &copy The Odin Project 2021</p>
+    </div>
+  </footer>
 </body>
+
 </html>

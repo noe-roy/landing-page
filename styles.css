@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS Reset */
+
+html {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+}
+
+.button {
+  border: none;
+  margin: 0;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+
+  /* inherit font & color from ancestor */
+  font: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+
+
+
+/* Global Styles */
+
+.section-container,
+.header-container,
+.footer {
+  margin: 0 auto;
+  max-width: 62.5rem;
+}
+
+.section-container {
+  padding: 4rem 0 7rem;
+}
+
+.flex {
+  display: flex;
+}
+
+header,
+.hero,
+footer {
+  background-color: #1F2937;
+}
+
+.button {
+  color: #F9FAF8;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button--solid {
+  background-color: #2563EB;
+}
+
+
+
+/* Header */
+
+.header-container {
+  padding: 2rem 0;
+  align-items: center;
+}
+
+.logo {
+  color: #F9FAF8;
+  font-size: 1.5rem;
+}
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.logo::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f7b6";
+  padding-right: 0.5rem;
+}
+
+.menu {
+  margin-left: auto;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-item a {
+  color: #E5E7EB;
+  text-decoration: none;
+}
+
+
+
+/* Hero Section */
+
+.hero__title {
+  color: #F9FAF8;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.hero__title {
+  margin-bottom: 0.8rem;
+}
+
+.hero__secondary-text {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.hero__secondary-text {
+  margin-bottom: 1.5rem;
+}
+
+.hero__secondary-text,
+.menu a {
+  color: #E5E7EB;
+  font-size: 18px;
+}
+
+.hero-image {
+  width: 300px;
+  height: auto;
+}
+
+.hero .section-container {
+  gap: 3rem;
+}
+
+.hero .section-container>* {
+  flex: 1;
+}
+
+.hero .button:hover {
+  background-color: #F9FAF8;
+  color: #3882F6;
+}
+
+
+
+/* About Section */
+
+.about__title {
+  font-size: 2rem;
+  color: #1F2937;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.services {
+  gap: 4rem;
+}
+
+.card {
+  flex: 0 1 100%;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card p {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+
+
+/* Customer Quote Section */
+
+.customer-quote {
+  background-color: #E5E7EB;
+}
+
+.quote-container {
+  padding: 0 4rem;
+}
+
+.quote {
+  font-size: 2rem;
+  font-weight: 300;
+  font-style: italic;
+  color: #1F2937;
+}
+
+cite {
+  display: flex;
+  justify-content: end;
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
+/* Call to Action Section */
+
+.call-to-action-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3882F6;
+  color: #F9FAF8;
+  padding: 4rem 8rem;
+  border-radius: 0.5rem;
+}
+
+.call-to-action-container .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2 0 25%;
+}
+
+.button--duotone {
+  border: 2px solid #F9FAF8;
+}
+
+.button--duotone:hover {
+  background-color: #F9FAF8;
+  color: #3882F6;
+}
+
+.call-to-action-container h2 {
+  margin-bottom: 0.5rem;
+}
+
+.call-to-action-container p {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+
+
+/* Footer */
+.footer {
+  padding: 2rem 0;
+  color: #F9FAF8;
+  justify-content: center;
+  align-items: center;
+}
